@@ -31,7 +31,7 @@ cd server
 Crea un archivo `.env` con:
 ```
 PORT=3001
-JWT_SECRET=A31uh0Tj4Xan9OIxHpp0XKjDSHFRehe0
+JWT_SECRET=
 ```
 
 **⚠️ IMPORTANTE**: Cambia `JWT_SECRET` por una cadena aleatoria larga y segura (puedes usar: https://randomkeygen.com/)
