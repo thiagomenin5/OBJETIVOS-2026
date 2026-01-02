@@ -61,10 +61,11 @@ git push -u origin main
 2. Haz clic en "New +" → "Web Service"
 3. Conecta tu repositorio de GitHub
 4. Configuración:
-   - **Name**: objetivo-2026 (o el nombre que prefieras)
+   - **Name**: objetivo-2026-backend (o el nombre que prefieras)
    - **Environment**: Node
-   - **Build Command**: `cd server && npm install`
-   - **Start Command**: `cd server && node index.js`
+   - **Root Directory**: `server` (SI aparece esta opción, úsala y luego el Start Command será diferente)
+   - **Build Command**: `npm install` (si Root Directory es `server`) O `cd server && npm install` (si Root Directory está vacío)
+   - **Start Command**: `node index.js` (si Root Directory es `server`) O `cd server && node index.js` (si Root Directory está vacío)
    - **Plan**: Free
 
 5. En "Advanced" → "Environment Variables", agrega:

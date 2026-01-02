@@ -47,10 +47,10 @@ git push -u origin main
    - **Name**: `objetivo-2026-backend`
    - **Region**: El más cercano a ti
    - **Branch**: `main`
-   - **Root Directory**: `server` (IMPORTANTE)
+   - **Root Directory**: `server` (IMPORTANTE - deja esto vacío si no aparece la opción)
    - **Runtime**: `Node`
    - **Build Command**: `npm install`
-   - **Start Command**: `node index.js`
+   - **Start Command**: `node index.js` (si Root Directory es `server`) O `cd server && node index.js` (si Root Directory está vacío)
    - **Plan**: Free
 
 4. **Variables de Entorno** (Click en "Advanced"):
