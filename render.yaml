@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: objetivo-2026-backend
+    env: node
+    buildCommand: cd server && npm install
+    startCommand: cd server && node index.js
+    envVars:
+      - key: PORT
+        value: 3001
+      - key: JWT_SECRET
+        generateValue: true
+    plan: free
+
+  - type: web
+    name: objetivo-2026-frontend
+    env: static
+    buildCommand: cd client && npm install && npm run build
+    staticPublishPath: ./client/dist
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: objetivo-2026-backend
+          property: host
+    plan: free
+
