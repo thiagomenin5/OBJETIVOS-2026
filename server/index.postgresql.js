@@ -347,3 +347,4 @@ app.delete('/api/objetivos/:id', authenticateToken, async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
+
